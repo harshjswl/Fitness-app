@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08d271f3-562f-48fe-bac5-360c782dd5ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/activity-service/src/main/java/com/fitness/activity_service/config/WebClientConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activity-service/src/main/java/com/fitness/activity_service/service/UserValidationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/activity-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activity-service/src/main/java/com/fitness/activity_service/config/WebClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/activity-service/src/main/java/com/fitness/activity_service/config/WebClientConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activity-service/src/main/java/com/fitness/activity_service/service/ActivityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/activity-service/src/main/java/com/fitness/activity_service/service/ActivityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/fitness/userservice/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/fitness/userservice/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/fitness/userservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/fitness/userservice/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
