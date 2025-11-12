@@ -7,6 +7,8 @@ import com.fitness.userservice.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.UUID;
+
 @Service
 public class UserService {
     @Autowired
@@ -36,6 +38,21 @@ public class UserService {
         userResponse.setRole(savedUser.getRole());
         userResponse.setCreatedAt(savedUser.getCreatedAt());
         userResponse.setUpdatedAt(savedUser.getUpdatedAt());
+        return userResponse;
+    }
+
+    public UserResponse getUserProfile(UUID userId) {
+        User user=repository.findById(userId)
+                .orElseThrow(()->new RuntimeException("User not found"));
+        UserResponse userResponse=new UserResponse();
+        userResponse.setId(user.getId());
+        userResponse.setFirstName(user.getFirstName());
+        userResponse.setLastName(user.getLastName());
+        userResponse.setEmail(user.getEmail());
+        userResponse.setPassword(user.getPassword());
+        userResponse.setRole(user.getRole());
+        userResponse.setCreatedAt(user.getCreatedAt());
+        userResponse.setUpdatedAt(user.getUpdatedAt());
         return userResponse;
     }
 }

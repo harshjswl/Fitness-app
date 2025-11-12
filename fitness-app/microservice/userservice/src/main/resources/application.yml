@@ -1,12 +1,13 @@
 spring:
   application:
-  name: userService
+    name: userService
+
   datasource:
-      url: jdbc:postgresql://localhost:5432/fitness-user
-      username: postgres
-      password: harsh
+    url: jdbc:postgresql://localhost:5432/fitness-user
+    username: postgres
+    password: harsh
 
   jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
-      database-platform: org.hibernate.dialect.PostgreSQLDialect
